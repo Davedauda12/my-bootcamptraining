@@ -1,0 +1,28 @@
+.navbar{
+    display: flex;
+    color: #ffffff;
+    position: fixed;
+    height: 70px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 10px;
+    background-color:blueviolet; /* Start with transparent background */
+    z-index: 100;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 400px;
+}
+   
+ul li{
+       margin: 20px;
+}
+   
+ul li a{
+       text-decoration: none;
+       color: #ffffff;
+}

@@ -1,0 +1,141 @@
+body{
+    background-color:white;
+}
+.navbar{
+    display: flex;
+    color: #ffffff;
+    position: fixed;
+    height: 70px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 10px;
+    background-color:blueviolet; /* Start with transparent background */
+    z-index: 100;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 400px;
+}
+   
+ul li{
+       margin: 20px;
+}
+   
+ul li a{
+       text-decoration: none;
+       color: #ffffff;
+}
+.parallax-container {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.parallax-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.parallax-text {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+}
+.parallax-copy {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+.parallax-container::before {
+    content: "";
+    background-image: url(../images/logo.jpg);
+    width: 1px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: parallax 1m linear infinite;
+}
+@keyframes parallax {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateY(-10%);
+    }
+
+}
+
+.btn-ghost{
+    width: 200px;
+    border: none;
+    background-color: #fff;
+    color: red;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 8px;
+    animation: colorchange 3s infinite;
+}
+
+.btn-bye{
+    width: 200px;
+    border: none;
+    background-color: #fff;
+    color: red;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 8px;
+    animation: colorchange 3s infinite;
+}
+
+@keyframes colorchange{
+    0%, 100% {
+        background-color: blue;
+    }
+    50%{
+        background-color: green;
+    }
+    0%, 10%{
+        background-color:aqua;
+    }
+    90%{
+        background-color: black;
+    }
+}
+.moving-text {
+    margin-bottom:rem;
+    font-size: 30px;
+    color: red;
+    position: relative;
+    font-weight: 700;
+    text-align: center;
+    animation: moveBackAndForth 10s ease-in-out infinite;
+}
+@keyframes moveBackAndForth {
+    0%, 100% {
+        left: 0;
+    }
+    50% {
+        left: 100px;
+    }
+}
+.my{
+    background-color: black;
+    color: red;
+    margin-top:6rem;
+}
+   
